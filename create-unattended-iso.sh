@@ -229,7 +229,7 @@ sed -i -r 's/timeout\s+[0-9]+/timeout 1/g' $tmp/iso_new/isolinux/isolinux.cfg
 # set late command
    late_command="d-i preseed/late_command string \
     wget -q --no-check-certificate https://raw.githubusercontent.com/sdltom/preseed/master/late_command.service -O /target/etc/systemd/system/late_command.service && \
-    in-target /bin/systemctl enable late_command.service
+    in-target /bin/systemctl enable late_command.service"
 
 # copy the netson seed file to the iso
 mkdir "./custom"

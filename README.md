@@ -5,7 +5,7 @@
 * From your command line, run the following commands:
 
 ```
-$ wget https://raw.githubusercontent.com/netson/ubuntu-unattended/master/create-unattended-iso.sh
+$ wget https://raw.githubusercontent.com/tomsdl/preseed/master/create-unattended-iso.sh
 $ chmod +x create-unattended-iso.sh
 $ sudo ./create-unattended-iso.sh
 ```

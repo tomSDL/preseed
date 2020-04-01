@@ -234,7 +234,6 @@ sed -i -r 's/timeout\s+[0-9]+/timeout 1/g' $tmp/iso_new/isolinux/isolinux.cfg
 # copy the netson seed file to the iso
 mkdir "./custom"
 cp -rT $tmp/$seed_file $tmp/iso_new/preseed/$seed_file
-cp -rT $SCRIPT_DIR/custom $tmp/iso_new/custom
 
 # include firstrun script
 echo "

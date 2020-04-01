@@ -220,21 +220,11 @@ echo en > $tmp/iso_new/isolinux/lang
 #taken from https://github.com/fries/prepare-ubuntu-unattended-install-iso/blob/master/make.sh
 sed -i -r 's/timeout\s+[0-9]+/timeout 1/g' $tmp/iso_new/isolinux/isolinux.cfg
 
-
-# set late command
-
-   late_command="d-i preseed/late_command string \
-    wget -q --no-check-certificate https://raw.githubusercontent.com/sdltom/preseed/master/late_command.service -O /target/etc/systemd/system/late_command.service && \
-    in-target /bin/systemctl enable late_command.service"
-
 # copy the netson seed file to the iso
 cp -rT $tmp/$seed_file $tmp/iso_new/preseed/$seed_file
 
 # include firstrun script
 echo "
-# setup firstrun script
-d-i preseed/late_command                                    string      $late_command" >> $tmp/iso_new/preseed/$seed_file
-
 # generate the password hash
 pwhash=$(echo $password | mkpasswd -s -m sha-512)
 

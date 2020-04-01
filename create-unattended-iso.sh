@@ -224,8 +224,7 @@ sed -i -r 's/timeout\s+[0-9]+/timeout 1/g' $tmp/iso_new/isolinux/isolinux.cfg
 cp -rT $tmp/$seed_file $tmp/iso_new/preseed/$seed_file
 
 # include firstrun script
-echo "
-# generate the password hash
+
 pwhash=$(echo $password | mkpasswd -s -m sha-512)
 
 # update the seed file to reflect the users' choices

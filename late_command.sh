@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Modified from https://github.com/panticz/preseed
+
 # This script will run once after a fresh installation
 
 # todo

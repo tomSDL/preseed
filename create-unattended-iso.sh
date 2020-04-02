@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# Modified from https://github.com/netson/ubuntu-unattended
+
 # file names & paths
 tmp="$HOME"  # destination folder to store the final iso file
 hostname="ubuntu"

@@ -13,4 +13,14 @@ The script will keep a copy of the available iso in a work file for faster retri
 If you wish to rebuild the menu by retrieving available versions from ubuntu.com:
 ```
 $ sudo ./create-unattended-iso.sh rebuild
+
 ```
+# Thanks 
+
+Scripts were copied and modified from the following sources. Thank you!
+
+https://github.com/panticz/preseed
+
+https://github.com/netson/ubuntu-unattended
+
+https://github.com/jamesawhiteiii/cidse-ubuntu
